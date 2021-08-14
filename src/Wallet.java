@@ -39,9 +39,9 @@ public class Wallet {
         return total;
     }
 
-    public Transaction sendFunds(PublicKey _recipient, float value) {
+    public Transaction sendFunds(PublicKey recipient, float value) {
         if (getBalance() < value) {
-            System.out.println("#Not Enough funds to send transaction. Transaction Discarded.");
+            System.out.println("Not enough funds to send transaction. Transaction discarded.");
             return null;
         }
         ArrayList<TransactionInput> inputs = new ArrayList<TransactionInput>();
@@ -55,7 +55,7 @@ public class Wallet {
                 break;
         }
 
-        Transaction newTransaction = new Transaction(publicKey, _recipient, value, inputs);
+        Transaction newTransaction = new Transaction(publicKey, recipient, value, inputs);
         newTransaction.generateSignature(privateKey);
 
         for (TransactionInput input : inputs) {
