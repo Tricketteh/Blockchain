@@ -6,10 +6,10 @@ public class TransactionOutput {
     public float value;
     public String parentTransactionId;
 
-    public TransactionOutput(PublicKey res, float value, String ptid) {
+    public TransactionOutput(PublicKey res, float value, String pti) {
         this.reciepient = res;
         this.value = value;
-        this.parentTransactionId = ptid;
+        this.parentTransactionId = pti;
         this.id = StringUtil
                 .applySha256(StringUtil.getStringFromKey(reciepient) + Float.toString(value) + parentTransactionId);
     }
