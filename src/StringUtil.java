@@ -20,7 +20,7 @@ public class StringUtil {
 					hexString.append('0');
 				hexString.append(hex);
 			}
-			return hexString.toString();
+			return hexString.toString(); \\ creating hash
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
