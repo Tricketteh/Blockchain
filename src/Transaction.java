@@ -7,7 +7,7 @@ public class Transaction {
     public PublicKey sender;
     public PublicKey reciepient;
     public float value;
-    public byte[] signature;
+    public byte[] signature; \\ used to prove ownership
     private static int sequence;
 
     public ArrayList<TransactionInput> inputs = new ArrayList<TransactionInput>();
