@@ -5,4 +5,4 @@ This is my own sort of cryptocurrency that has some useful features. Perhaps I w
 * Users can create a new wallet;
 * Wallets have public and private cryptographed keys;
 * All transactions are secured with digital signature algorithm to prove ownership;
-* Users can make transactions on this blockchain;
+* Users can make transactions on this blockchain.
